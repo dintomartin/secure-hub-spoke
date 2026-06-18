@@ -93,8 +93,7 @@ The guide is split into sequential phases:
 ├── private-endpoints.tf    # 3 private endpoints
 ├── compute.tf              # 2 test VMs (no public IP)
 ├── outputs.tf              # firewall IP, VM IPs, PaaS hostnames, etc.
-├── docs/
-│   └── architecture.png
+|
 └── guide/                  # detailed phase-by-phase walkthrough (Phases 0-7)
 ```
 
