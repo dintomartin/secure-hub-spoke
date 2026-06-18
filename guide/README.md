@@ -2,7 +2,7 @@
 
 A do-it-yourself guide that builds a production-style secure hub-spoke network with **plain, flat Terraform** — no modules, no `for_each` loops over spokes. Every resource is written out explicitly, so you can read exactly what gets created and why. The two spokes are spelled out longhand.
 
-![Architecture](docs/architecture.png)
+![Architecture](architecture.png)
 
 > If the image doesn't show, open `docs/architecture.png` directly.
 
@@ -70,14 +70,14 @@ The phases are ordered so each one only references resources from earlier phases
 
 | Phase | Guide | What you create |
 |-------|-------|-----------------|
-| 0 | [Prerequisites & setup](docs/phase-0-setup.md) | Tools, login, `providers.tf`, `variables.tf`, `terraform.tfvars`, `.gitignore`. |
-| 1 | [Resource groups & networks](docs/phase-1-networks.md) | `main.tf`, `network.tf`. |
-| 2 | [Azure Firewall](docs/phase-2-firewall.md) | `firewall.tf`. |
-| 3 | [Bastion & VPN Gateway](docs/phase-3-bastion-vpn.md) | `bastion.tf`, `vpn.tf`. |
-| 4 | [Peering & routing](docs/phase-4-peering-routing.md) | `peering.tf`, `routing.tf`. |
-| 5 | [PaaS, DNS & private endpoints](docs/phase-5-paas-private-endpoints.md) | `paas.tf`, `dns.tf`, `private-endpoints.tf`. |
-| 6 | [Test VMs](docs/phase-6-test-vms.md) | `compute.tf`. |
-| 7 | [Deploy & validate](docs/phase-7-deploy-validate.md) | `outputs.tf`, then apply and run the validation suite. |
+| 0 | [Prerequisites & setup](phase-0-setup.md) | Tools, login, `providers.tf`, `variables.tf`, `terraform.tfvars`, `.gitignore`. |
+| 1 | [Resource groups & networks](phase-1-networks.md) | `main.tf`, `network.tf`. |
+| 2 | [Azure Firewall](phase-2-firewall.md) | `firewall.tf`. |
+| 3 | [Bastion & VPN Gateway](phase-3-bastion-vpn.md) | `bastion.tf`, `vpn.tf`. |
+| 4 | [Peering & routing](phase-4-peering-routing.md) | `peering.tf`, `routing.tf`. |
+| 5 | [PaaS, DNS & private endpoints](phase-5-paas-private-endpoints.md) | `paas.tf`, `dns.tf`, `private-endpoints.tf`. |
+| 6 | [Test VMs](phase-6-test-vms.md) | `compute.tf`. |
+| 7 | [Deploy & validate](phase-7-deploy-validate.md) | `outputs.tf`, then apply and run the validation suite. |
 
 ---
 
