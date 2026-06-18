@@ -2,7 +2,7 @@
 
 A production-style **hub-and-spoke** network on Microsoft Azure, provisioned end-to-end with Terraform. The design centralizes shared connectivity and security services in a hub VNet and isolates workloads in spoke VNets, with **all egress and inter-spoke traffic forced through Azure Firewall**, **PaaS services exposed only through private endpoints (no public access)**, and **administrative access exclusively through Azure Bastion (no public IPs on workload VMs)**.
 
-(guide/architecture.png)
+![Architecture](guide/architecture.png)
 
 \---
 
