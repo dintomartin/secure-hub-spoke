@@ -1,0 +1,9 @@
+subscription_id    = "00000000-0000-0000-0000-000000000000"
+location           = "eastus"
+prefix             = "shs"
+
+vm_admin_username  = "azureuser"
+vm_admin_password  = "REPLACE-Me-With-A-Strong-Pass-123"
+
+sql_admin_login    = "sqladmin"
+sql_admin_password = "REPLACE-Me-With-A-Strong-Pass-456"
